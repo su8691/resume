@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>五子棋</title>
+    <link rel="stylesheet" href="css/style_five.css">
+</head>
+<body>
+    <header>
+        <h1><a href="index.html">SihiTing</a></h1>
+        <nav>
+        <ul class="drop-down-menu">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="index.html#pp">PROJECTS</a>
+                <ul>
+                    <li><a href="#">機器學習可縮放向量圖形字型生成</a></li>
+                    <li><a href="fiveChess.html">基於深度學習的五子棋 AI</a></li>
+                    <li><a href="#">農遊規劃網頁</a></li>
+                    <li><a href="#">C Interpreter</a></li>
+                </ul>
+            </li>
+        </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="chess">
+            <h2>基於深度學習的五子棋AI</h2>
+            <div>
+                <h3>簡介</h3>
+                AI時代來臨，各種機器學習、深度學習、神經網路等等技術迎面而來，<br>
+                因此我們專題選擇以五子棋作為展示成果的媒介，深入研究不同種CNN之間的效率以及其中運作的原理。<br>
+                
+                利用蒙地卡羅樹搭配類神經網路產生一個虛擬玩家，
+                <br>並使用自我對戰或已有的賽局的紀錄，訓練類神經網路，
+                再放置到各個不同的類神經網路結構裡去做測試。<br>
+                
+                最終以我們編寫出懂得五子棋基礎規規則的Rule-base player當作強度基準，透過對戰方式，找出訓練成果最好的網路。
+            </div>
+    
+            <div>
+                <h3>對戰架構</h3>
+                利用類神經網路產生的分數與機率，搭配蒙地卡羅樹，來找到勝率最高的棋步。
+                並將樹上的節點保留下來，直到這場遊戲結束。<br>
+                <img src="img/five/step1.png">
+            </div>
+    
+            <div>
+                <h3>訓練架構</h3>
+                蒙地卡羅樹搭配類神經網路產生一個虛擬玩家。
+                使用自我對戰的紀錄，訓練類神經網路。<br>
+                最終與Rule-based player對戰，找出訓練效率最好的網路。<br>
+                <img src="img/five/step2.png">
+            </div>
+    
+            <div>
+                <h3>實作結果</h3>
+                整理CNN Player與Rule-based player對戰結果，紀錄分別至2500步及5000步為止的勝率及時間。<br>
+                <div class="result">
+                    <img src="img/five/win.png">
+                    <img src="img/five/time.png">
+                </div>
+                <p>如圖表所示，我們可以得知勝率較為出色的網路為NIN；而訓練時間最短、效率最高的網路則為LeNet。</p>
+            </div>
+            
+            <div>
+                <h3>使用者介面</h3>
+                製作可以讓人和AI互動的圖形化介面，可以選擇跟最初，或是訓練出來的AI對抗。<br>
+                亦可以選擇觀看AI的自我對戰。<br>
+                右側的文字欄，則顯示到目前為止的紀錄，包括下棋的順序，位置，勝者。<br>
+                <img src="img/five/user.png">
+            </div>
+        </section>
+    </main>
+    
+</body>
+</html>

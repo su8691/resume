@@ -1,0 +1,281 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+header {
+    position: fixed;
+    background-color: #9d8189;
+    height: 80px;
+    width: 100%;
+    z-index: 999;
+    font-family: papyrus;
+}
+header h1 a{
+    color: white;
+    text-decoration: none;
+    position: absolute;
+    left: 120px;
+    top: 0;
+    line-height: 80px;
+}
+ul.drop-down-menu {
+    position: absolute;
+    right: 30px;
+    top: 0;
+    line-height: 5px;
+    padding: 10px 10px;
+}
+ul.drop-down-menu li {
+    display: inline;
+    margin-right: 4vw;
+    padding: 10px 10px ;
+}
+ul.drop-down-menu > li:last-child {
+    border-right: none;
+}
+ul.drop-down-menu > li {
+    float: left; /* 只有第一層是靠左對齊*/
+}
+ul.drop-down-menu a {
+    color: white;
+    text-decoration: none;
+    background-color:  #9d8189;
+    display: block;
+    padding: 5px 15px;
+    line-height: 40px;
+    border-radius: 10px;
+}
+ul.drop-down-menu a:hover { /* 滑鼠滑入按鈕變色*/
+    background-color: white;
+    color: black;
+    text-decoration: underline;
+}
+ul.drop-down-menu li:hover > a { /* 滑鼠移入次選單上層按鈕保持變色*/
+    text-decoration: underline;
+}
+ul.drop-down-menu ul { /*隱藏次選單*/
+    left: 99999px;
+    opacity: 0;
+    -webkit-transition: opacity 0.3s;
+    transition: opacity 0.3s;
+}
+ul.drop-down-menu li:hover > ul { /* 滑鼠滑入展開次選單*/
+    opacity: 1;
+    -webkit-transition: opacity 0.3s;
+    transition: opacity 0.3s;
+    left: -1px;
+    border-right: 5px;
+}
+
+.news {
+    background-color: antiquewhite;
+    color: white;
+    height: 85vh;
+    background-image: url("img/09984.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: papyrus;
+}
+.btn {
+    position: relative;
+    z-index: 1;
+    min-width: 300px;
+    bottom: 12%;
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    transition: color 0.5s;
+    padding: 12px 20px;
+    font-family: papyrus;
+}
+.btn:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    border: 5px solid white;
+}
+.btn:after {
+    content: "";
+    position: absolute;
+    left: 9px;
+    top: 9px;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+    border: 5px solid #222222;
+    transition: all 0.3s 0.2s;
+}
+.btn:hover {
+    color: #222222;
+}
+.btn:hover:after {
+    transition: all 0.3s;
+    left: 0;
+    top: 0;
+}
+.btn .inner {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    overflow: hidden;
+}
+.btn .inner .blob {
+    position: absolute;
+    top: 6px;
+    width: 25%;
+    height: 100%;
+    background: white;
+    border-radius: 100%;
+    transform: translate3d(0, 150%, 0) scale(1.7);
+    transition: transform 0.45s;
+}
+.btn .inner .blob:nth-child(1) {
+    left: 0%;
+    transition-delay: 0s;
+}
+.btn .inner .blob:nth-child(2) {
+    left: 30%;
+    transition-delay: 0.08s;
+}
+.btn .inner .blob:nth-child(3) {
+    left: 60%;
+    transition-delay: 0.16s;
+}
+.btn .inner .blob:nth-child(4) {
+    left: 90%;
+    transition-delay: 0.24s;
+}
+.btn:hover .inner .blob {
+    transform: translateZ(0) scale(1.7);
+}
+.profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 20px;
+}
+.profile img {
+    left: 30%;
+    width: 10%;
+    border-radius: 50px;
+    padding: 20px 20px;
+}
+.contactInfo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.contactInfo img {
+    width: 15%;
+    border-radius: 50px;
+    padding: 20px;
+}
+.contact:hover {
+    transform: scale(1.5);
+}
+.info {
+    width: 30%;
+    padding: 20px 20px;
+    font-family:Georgia;
+    line-height: 1.8;
+}
+.text-1{
+    color: #858484;
+    border-bottom:1px #b7b7b7 solid; 
+    padding-bottom:3px;
+}
+.text-2{
+    font-size: 30px;
+}
+.school {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: left;
+    padding: 20px 20px;
+    font-size: large;
+    line-height: 2.5;
+}
+.schoolTitle {
+    color: white;
+    text-shadow: 0 0 5px black, 0 0 5px black, 0 0 5px black, 0 0 5px black; font-weight: bold;
+    border-bottom:1px #b7b7b7 solid; 
+    padding-bottom:2px;
+}
+.school .link {
+    color: DodgerBlue;
+    text-decoration: none;
+    transition: background-color 0.5s;
+}
+.school .link:hover {
+    background-color: DodgerBlue;
+    color: white;
+    text-decoration: underline;
+}
+.projects {
+    display: flex;
+    background-color: bisque;
+    justify-content: space-between;
+    align-items: center;
+    padding: 200px 280px 80px;
+    line-height: 2.5;
+}
+.projects div {
+    width: 400px;
+    text-align: center;
+}
+.projects img {
+    width: 100%;
+    border-radius: 10px;
+}
+.more {  /* 因為繼續閱讀是個超連結，要用a來定義 */
+
+    display: none;  /* 平常設定不要顯示 */
+    
+} 
+.project1 :hover .more {
+    
+    display: block;  /* 當滑鼠移至該篇文章時，設定以block顯示，可設定超連結以一個區塊顯示 */
+    
+    width: 150px;  /* 設定長與寬 */
+    
+    height: 150px;
+    
+    /*background: url(image url) center center no-repeat;   設定背景 */
+    
+    position: absolute;  /* 將繼續閱讀的位置放置於文章左上角，top=0, left=0 */
+    
+    top: 0px;
+    
+    left: 0px;
+    
+    font-size: 0px;  /* 不要文字出現，因為設定背景來顯示 */
+}
+footer {
+    background-color: black;
+    color: #b7b7b7;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+}
