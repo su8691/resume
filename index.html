@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MyWebsite</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
     <header>
@@ -12,12 +12,12 @@
         <nav>
         <ul class="drop-down-menu">
             <li><a href="index.html">HOME</a></li>
-            <li><a href="#pp">PROJECTS</a>
+            <li><a href="#pp">PROJECTS ▼</a>
                 <ul>
-                    <li><a href="https://su8691.github.io/SVGfont/">機器學習可縮放向量圖形字型生成</a></li>
-                    <li><a href="fiveChess.html">基於深度學習的五子棋 AI</a></li>
-                    <li><a href="hackathon.html">農遊規劃網頁</a></li>
-                    <li><a href="c.html">C Interpreter</a></li>
+                    <li><a href="https://su8691.github.io/SVGfont/" target="_blank">機器學習可縮放向量圖形字型生成</a></li>
+                    <li><a href="./fiveChess.html">基於深度學習的五子棋 AI</a></li>
+                    <li><a href="./hackathon.html">農遊規劃網頁</a></li>
+                    <li><a href="./c.html">C Interpreter</a></li>
                 </ul>
             </li>
         </ul>
@@ -58,8 +58,8 @@
         
         <section class="school">
             <div>
-                <h2 class="schoolTitle">學經歷</h2>
-                <h3>國立臺北科技大學 資訊工程所, 2020年9月 ~ 2022年8月</h3>
+                <h2 class="schoolTitle">學歷</h2>
+                <h3><img src="css/img/NTUT.jpg" alt="北科"> 國立臺北科技大學 資訊工程所, 2020年9月 ~ 2022年8月</h3>
                 <p><li>碩士論文：<a class="link" href="https://ndltd.ncl.edu.tw/cgi-bin/gs32/gsweb.cgi/ccd=lctYwB/record?r1=17&h1=1">機器學習可縮放向量圖形字型生成</a></li>
                     <li>於 2022 Computer Graphics Workshop 發表 機器學習可縮放向量圖形字型生成</li>
                     <li>於 2022 Siggraph ASIA 發表 <a class="link" href="https://dl.acm.org/doi/abs/10.1145/3550082.3564163"> Font Neural Style Transfer for OpenType-SVG Font</a></li>
@@ -69,7 +69,7 @@
                     <li>擔任 字體設計與文字編碼助教</li>
                     </p> 
                 
-                <h3>中原大學 資訊工程學系, 2015年9月 ~ 2019年6月</h3>
+                <h3><img src="css/img/CYCU.png" alt="中原"> 中原大學 資訊工程學系, 2015年9月 ~ 2019年6月</h3>
                 <p><li>基於深度學習的五子棋 AI | 畢業專題競賽 軟體組 第二名</li>
                     <li>C Interpreter | C/C++ </li>
                     <li>動態跳躍監測互動系統 | OpenCV</li>
@@ -79,41 +79,74 @@
                 </p>
             </div>
         </section>
-
-        <section id = "pp" class="projects">
-            <div class="project1">
-                <img src="css/img/banner2.jpg" alt="碩士論文">
-                <h3>碩士論文</h3>
-                <p>機器學習可縮放向量圖形字型生成</p>
-                <a class="more" href="#">read more</a>
-            </div>
+            
+        <section class="projectTitle">
             <div>
-                <img src="css/img/fiveChess.png" alt="大學專題">
-                <h3>大學專題</h3>
-                <p>基於深度學習的五子棋 AI</p>
+                <h2>專題 / 活動</h2>
             </div>
-            <div>
-                <img src="css/img/hackathon.png" alt="農業創新黑客松">
-                <h3>農業創新黑客松</h3>
-                <p>農遊規劃網頁</p>
+            
+            <div class="projects">
+                <figure class="project_sub">
+                    <img src="css/img/font.jpg" alt="碩士論文">
+                    <figcaption>
+                        <h3>Read More</h3>
+                    </figcaption>
+                    <a href="https://su8691.github.io/SVGfont/" target="_blank"></a>
+                    <p><h4>碩士論文</h4></p>
+                    <p>機器學習可縮放向量圖形字型生成</p>
+                </figure>
+    
+                <figure class="project_sub">
+                    <img src="css/img/fiveChess.png" alt="大學專題">
+                    <figcaption>
+                        <h3>Read More</h3>
+                    </figcaption>
+                    <a href="./fiveChess.html"></a>
+                    <p><h4>大學專題</h4></p>
+                    <p>基於深度學習的五子棋 AI</p>
+                </figure>
+    
+                <figure class="project_sub">
+                    <img src="css/img/hack.jpg" alt="黑客松">
+                    <figcaption>
+                        <h3>Read More</h3>
+                    </figcaption>
+                    <a href="./hackathon.html"></a>
+                    <p><h4>農業創新黑客松</h4></p>
+                    <p>農遊規劃網頁</p>
+                </figure>
+    
+                <figure class="project_sub">
+                    <img src="css/img/c_cpp-log.jpg" alt="C">
+                    <figcaption>
+                        <h3>Read More</h3>
+                    </figcaption>
+                    <a href="./c.html"></a>
+                    <p><h4>C Interpreter</h4></p>
+                    <p>以 C++ 撰寫 C 語言直譯器</p>
+                </figure>
+    
+                <figure class="project_sub">
+                    <img src="css/img/33rd.jpg" alt=系學會">
+                    <figcaption>
+                        <h3>Read More</h3>
+                    </figcaption>
+                    <a href="#"></a>
+                    <p><h4>資工系33rd系學會</h4></p>
+                    <p>擔任美宣長 並舉辦多項活動</p>
+                </figure>
+    
+                <figure class="project_sub">
+                    <img src="css/img/voll.jpg" alt="女排">
+                    <figcaption>
+                        <h3>Read More</h3>
+                    </figcaption>
+                    <a href="#"></a>
+                    <p><h4>系女排</h4></p>
+                    <p></p>
+                </figure>
             </div>
-        </section>
-
-        <section class="projects">
-            <div>
-                <img src="css/img/c_cpp-log.png" alt="C Interpreter">
-                <h3>C Interpreter</h3>
-                <p></p>
-            </div>
-            <div>
-                <img src="css/img/diffvg.png" alt="資工系學會">
-                <h3>資工系學會</h3>
-                <p>舉辦多項活動</p>
-            </div>
-            <div>
-                <img src="css/img/IMG_20170430.jpg" alt="女排">
-                <h3>系女排</h3>
-            </div>
+            
         </section>
 
 
