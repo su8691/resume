@@ -74,6 +74,7 @@ ul.drop-down-menu li:hover > ul { /* 滑鼠滑入展開次選單*/
     text-align: left;
     padding: 20px 20px;
     font-size: large;
+    font-family: Arial;
     line-height: 2.5;
 }
 .intro div {
@@ -88,10 +89,21 @@ ul.drop-down-menu li:hover > ul { /* 滑鼠滑入展開次選單*/
     position: relative;
     width: 50%;
     left: 20%;
-    border-radius: 20px;
-    margin: 30px;
+    border-radius: 10px;
+    margin: 25px;
 }
 .result {
     width: 100%;
     display: flex;
+}
+.pic {
+    display: flex;
+    flex-flow: column;
+    padding: 5px;
+}
+.pic figcaption {
+    color: black;
+    font: italic smaller sans-serif;
+    font-size: 17px;
+    text-align: center;
 }

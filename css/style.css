@@ -18,6 +18,10 @@ header h1 a{
     top: 0;
     line-height: 80px;
 }
+li.title {
+    color: white;
+    font-weight: 500;
+}
 ul.drop-down-menu {
     position: absolute;
     right: 30px;
