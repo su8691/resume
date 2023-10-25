@@ -89,6 +89,7 @@ ul.drop-down-menu li:hover > ul { /* 滑鼠滑入展開次選單*/
     width: 50%;
     left: 20%;
     border-radius: 20px;
+    margin: 30px;
 }
 .result {
     width: 100%;

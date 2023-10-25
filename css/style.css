@@ -214,6 +214,8 @@ ul.drop-down-menu li:hover > ul { /* 滑鼠滑入展開次選單*/
     padding: 20px 20px;
     font-size: large;
     line-height: 2.5;
+    font-weight: 400;
+    font-family: Arial;
 }
 .school img {
     width: 35px;
@@ -239,22 +241,24 @@ ul.drop-down-menu li:hover > ul { /* 滑鼠滑入展開次選單*/
     text-decoration: underline;
 }
 .projectTitle {
-    background-color:antiquewhite;
+    background-color: #d7bba8;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: left;
-    font-size: 20px;
+}
+.projectTitle h2 {
+    font-size: 30px;
     color: white;
     text-shadow: 0 0 5px black, 0 0 5px black, 0 0 5px black, 0 0 5px black; font-weight: bold;
-    border-bottom:1px #000000 solid; 
-    padding-bottom:2px;
+    padding-bottom: 20px;
     padding-top: 50px;
 }
 .projects {
     display: flex;
     align-items: stretch;
+    flex-direction: column;
     flex-wrap: wrap;
     text-align: left;
     justify-content: space-between;
@@ -262,15 +266,36 @@ ul.drop-down-menu li:hover > ul { /* 滑鼠滑入展開次選單*/
     padding: 100x 200px 80px;
     line-height: 2.5;
 }
+.project_info {
+    background-color: #3e2a35;
+    margin: 10px;
+    border-radius: 50px;
+    border-color: white ;border-width:10px;border-style:ridge;
+    display: flex;
+    width: 80%;
+}
+.project_text {
+    font-size: 18px;
+    font-family: Arial;
+    font-weight: 500;
+    color: white;
+    text-shadow: 0 0 2px black, 0 0 2px black, 0 0 2px black, 0 0 2px black; 
+    display: flex; 
+    align-items: center;
+    width: 50%;
+    padding: 30px;
+}
 .project_sub {
     background-color: black;
     display:  inline block;
     font-size: 16px;
-    width: 25%;
+    width: 400px;
     margin: 50px;
     overflow: hidden;
     position: relative;
     text-align: center;
+    color: white;
+    text-shadow: 0 0 5px black, 0 0 5px black, 0 0 5px black, 0 0 5px black; font-weight: bold;
 }
 .project_sub * {
     -webkit-box-sizing: border-box;
