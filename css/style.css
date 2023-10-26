@@ -245,7 +245,7 @@ ul.drop-down-menu li:hover > ul { /* 滑鼠滑入展開次選單*/
     text-decoration: underline;
 }
 .projectTitle {
-    background-color: #d7bba8;
+    background-color: #283D3B;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -271,7 +271,7 @@ ul.drop-down-menu li:hover > ul { /* 滑鼠滑入展開次選單*/
     line-height: 2.5;
 }
 .project_info {
-    background-color: #3e2a35;
+    background-color: #197278;
     margin: 10px;
     border-radius: 50px;
     border-color: white ;border-width:10px;border-style:ridge;
@@ -283,7 +283,7 @@ ul.drop-down-menu li:hover > ul { /* 滑鼠滑入展開次選單*/
     font-family: Arial;
     font-weight: 500;
     color: white;
-    text-shadow: 0 0 2px black, 0 0 2px black, 0 0 2px black, 0 0 2px black; 
+    /*text-shadow: 0 0 2px black, 0 0 2px black, 0 0 2px black, 0 0 2px black; */
     display: flex; 
     align-items: center;
     width: 50%;
