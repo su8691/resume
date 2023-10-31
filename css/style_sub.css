@@ -4,7 +4,7 @@
 }
 header {
     position: fixed;
-    background-color: #9d8189;
+    background-color: #8c7851;
     height: 80px;
     width: 100%;
     z-index: 999;
@@ -39,7 +39,7 @@ ul.drop-down-menu > li {
 ul.drop-down-menu a {
     color: white;
     text-decoration: none;
-    background-color:  #9d8189;
+    background-color:  #8c7851;
     display: block;
     padding: 5px 15px;
     line-height: 40px;
