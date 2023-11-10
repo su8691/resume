@@ -400,6 +400,13 @@ ul.drop-down-menu li:hover > ul { /* 滑鼠滑入展開次選單*/
             transform: translate(-50%, -50%) scale(1);
     opacity: 1;
 }
+.project_text a {
+    text-decoration: none;
+}
+.project_text a :hover{
+    background-color: white;
+    transition: background-color 0.45s;
+}
 footer {
     background-color: black;
     color: #b7b7b7;
